@@ -123,5 +123,6 @@ C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\Cinem
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.pdb
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.genruntimeconfig.cache
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\bin\Debug\netcoreapp3.1\AuthenticationPlugin.dll
+C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.csproj.CoreCompileInputs.cache
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.MvcApplicationPartsAssemblyInfo.cache
