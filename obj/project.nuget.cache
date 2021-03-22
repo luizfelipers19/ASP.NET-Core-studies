@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "40cRiczhRqAwtX3cPr6r7pX5h63YCASq/SuqppiDNDgbEFhLN+WGb40LLrh92d8Zu5Tyc1JI64YazKQ+iFbR9Q==",
+  "dgSpecHash": "Jgsp79QP/RMf64lbbXvz4O7BiIzcWeuBrGS7tZPF/g2DwCM7IQh+ACnXaNdzDSbfBAUoPIX+QGusQtuNL0YUEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Windows\\Desktop\\ASP.NET-Core-studies-main\\CinemaAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\aspnetcore.authentication.plugin\\1.0.1\\aspnetcore.authentication.plugin.1.0.1.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

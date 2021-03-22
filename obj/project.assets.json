@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "AspNetCore.Authentication.Plugin/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.IdentityModel.Tokens": "5.5.0",
+          "System.IdentityModel.Tokens.Jwt": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.2/AuthenticationPlugin.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/AuthenticationPlugin.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1524,6 +1538,19 @@
     }
   },
   "libraries": {
+    "AspNetCore.Authentication.Plugin/1.0.1": {
+      "sha512": "cSPfOwOz1hhIg+hvi3egoLc2BHUjLi411NuVWK+8P7L2ieDUMjXjx0MwBzO6WLGxC/1ixqZ+2fagPRsUrpCLzQ==",
+      "type": "package",
+      "path": "aspnetcore.authentication.plugin/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.authentication.plugin.1.0.1.nupkg.sha512",
+        "aspnetcore.authentication.plugin.nuspec",
+        "lib/netcoreapp2.2/AuthenticationPlugin.dll",
+        "lib/netcoreapp2.2/AuthenticationPlugin.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -5792,6 +5819,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AspNetCore.Authentication.Plugin >= 1.0.1",
       "Microsoft.EntityFrameworkCore >= 5.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4"
@@ -5834,6 +5862,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AspNetCore.Authentication.Plugin": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.4, )"

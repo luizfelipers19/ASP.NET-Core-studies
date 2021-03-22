@@ -115,8 +115,6 @@ C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\bin\Debug\netcoreapp3.1\runti
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.csprojAssemblyReference.cache
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.AssemblyInfoInputs.cache
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.AssemblyInfo.cs
-C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.csproj.CoreCompileInputs.cache
-C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.RazorTargetAssemblyInfo.cache
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.csproj.CopyComplete
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\staticwebassets\CinemaAPI.StaticWebAssets.Manifest.cache
@@ -124,3 +122,6 @@ C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\stati
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.dll
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.pdb
 C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.genruntimeconfig.cache
+C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\bin\Debug\netcoreapp3.1\AuthenticationPlugin.dll
+C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\ASP.NET-Core-studies-main\obj\Debug\netcoreapp3.1\CinemaAPI.MvcApplicationPartsAssemblyInfo.cache

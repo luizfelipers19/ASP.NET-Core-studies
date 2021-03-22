@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "CinemaAPI/1.0.0": {
         "dependencies": {
+          "AspNetCore.Authentication.Plugin": "1.0.1",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
@@ -303,6 +304,22 @@
         },
         "compile": {
           "CinemaAPI.dll": {}
+        }
+      },
+      "AspNetCore.Authentication.Plugin/1.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.IdentityModel.Tokens": "5.6.0",
+          "System.IdentityModel.Tokens.Jwt": "5.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/AuthenticationPlugin.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.2/AuthenticationPlugin.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -3016,6 +3033,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspNetCore.Authentication.Plugin/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cSPfOwOz1hhIg+hvi3egoLc2BHUjLi411NuVWK+8P7L2ieDUMjXjx0MwBzO6WLGxC/1ixqZ+2fagPRsUrpCLzQ==",
+      "path": "aspnetcore.authentication.plugin/1.0.1",
+      "hashPath": "aspnetcore.authentication.plugin.1.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
