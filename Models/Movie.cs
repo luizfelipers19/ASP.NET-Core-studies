@@ -18,6 +18,8 @@ namespace CinemaAPI.Models
 
         public string Language { get; set; }
 
+        public string Duration { get; set; }
+
         public DateTime PlayingDate { get; set; }
 
         public DateTime PlayingTime { get; set; }
