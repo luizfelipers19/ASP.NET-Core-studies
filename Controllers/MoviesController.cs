@@ -24,6 +24,65 @@ namespace CinemaAPI.Controllers
         }
 
 
+        [Authorize]
+        [HttpGet("[action]")]
+        public IActionResult AllMovies(string sort)
+        {
+           var movies =  from movie in _dbContext.Movies
+            select new
+            {
+                Id = movie.Id,
+                Name = movie.Name,
+                Genre = movie.Genre,
+                Rating = movie.Rating,
+                Language = movie.Language,
+                Duration = movie.Duration,
+                ImageUrl = movie.ImageUrl
+            };
+
+            switch (sort)
+            {
+                case "desc":
+                    return Ok(movies.OrderByDescending(m => m.Rating));
+
+                case "asc":
+                    return Ok(movies.OrderBy(m => m.Rating));
+
+                default:
+                    return Ok(movies);
+            }
+
+
+
+
+            return Ok(movies);
+
+
+        }
+
+
+        //api/movies/moviedetail/1
+        [Authorize]
+        [HttpGet("[action]/{id}")]
+        public IActionResult MovieDetail(int id)
+        {
+            
+            
+            var movie = _dbContext.Movies.Find(id);
+
+            if(movie == null)
+            {
+                return NotFound();
+            }
+            return Ok(movie);
+        }
+
+
+
+
+
+
+
         [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Post([FromForm] Movie movieObj)
@@ -96,6 +155,33 @@ namespace CinemaAPI.Controllers
 
             }
 
+
+
+        }
+
+        // DELETE api/<MoviesController>/5
+        [Authorize(Roles = "Admin")]
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+
+            var movie = _dbContext.Movies.Find(id);
+
+            // caso o objeto não exista/ não tenha sido encontrado pelo Id passado na requisição
+            if (movie == null)
+            {
+                return NotFound("Mano, tu tá tentando deletar um negócio de um registro que nem existe. Tenta ver certinho aí o número do Id que vc tá passando, porque aqui no Servidor não tem nada com esse número");
+            }
+
+            else// caso o registro exista
+            {
+                _dbContext.Movies.Remove(movie);
+                _dbContext.SaveChanges();
+
+                return Ok("Registro Deletado mlk");
+
+
+            }
 
 
         }
