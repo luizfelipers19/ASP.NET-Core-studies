@@ -36,5 +36,25 @@ namespace CinemaAPI.Controllers
         }
 
 
+        [Authorize(Roles ="Admin")]
+        [HttpGet]
+        public IActionResult GetReservations()
+        {
+            //usando a sintaxe SQL para juntar as tabelas de reservas com a dos usuários, ligando a chave estrangeira à chave primária correspondente,
+            // e depois juntando a tabela de filmes com a tabela de reservas.
+            // após a junção das tabelas, retornar os atributos desejados com SELECT
+             var reservations = from reservation in _dbContext.Reservations
+            join customer in _dbContext.Users on reservation.UserId equals customer.Id
+            join movie in _dbContext.Movies on reservation.MovieId equals movie.Id
+            select new
+            {
+                Id = reservation.Id,
+                ReservationTime = reservation.ReservationTime,
+                CustomerName = customer.Name,
+                MovieName = movie.Name
+            };
+
+            return Ok(reservations);
+        }
     }
 }
